@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dongle:wght@300;400&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dongle:wght@300;400&display=swap');
+
+body{
+  background-color: #ffd67d;
+}
+
+.calc{
+  width:400px;
+  height: 585px;
+  margin:100px auto;
+  border-radius: 30px;
+  padding:1px;
+  background:linear-gradient(110deg, #0099ff 50%, #003eb1 88%);
+  border: outset 5px #0087e0;
+}
+
+.calcTop{
+  background:linear-gradient(110deg, #00a2ff 35%, #0059ff 40%);
+  justify-content:space-around;
+  color:white;
+  padding-top:5px;
+  height:220px;
+  border-radius: 30px 30px 5px 5px;
+  border:double 4px rgb(0, 0, 0);
+}
+
+.calcTop > p{
+  margin-left:25px;
+  margin-right:75px;
+  font-size:30px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+  display:inline-block;
+}
+
+.calcTop > div{
+  background-color: black;
+  display:inline-block;
+  height:fit-content;
+  margin-top:30px;
+}
+
+.solar{
+  width:100px;
+  height:28px;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+  background: linear-gradient(217deg, #756248cc, #ff000000),
+  linear-gradient(127deg, #6e6e6ecc 30%, #00ff0000 100%);
+  box-shadow: inset 0px 0px 3px 2px black;
+}
+
+.solar > div{
+  width:33px;
+  border-right:solid #838383 1px;
+}
+
+.solar > div:nth-child(4){
+  border-right:none;
+}
+
+#screen{
+  width:350px;
+  height:100px;
+  margin-left:15px;
+  margin-top:-10px;
+  background-color:#cdffc8;
+  border:inset 10px #2974ff;
+  position:relative;
+  font-family: 'Bangers', cursive;
+  font-family: 'Dongle', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.designScreen{
+  width:150px;
+  height:10px;
+  position:absolute;
+  top:-10px;
+  background: linear-gradient(110deg, #2cb2ff 72%, #224eab 89%);
+}
+
+.corner{
+  height:0;
+  width:0;
+  border-left : 10px solid transparent;
+  border-top : 10px solid #2cb2ff;
+  position:absolute;
+  top:-10px;
+  left:-10px;
+}
+
+.designScreen2{
+  width:100px;
+  height:10px;
+  position:absolute;
+  bottom:-10px;
+  background: linear-gradient(110deg, #2cb2ff 65%, #3874ff 90%);
+}
+
+.corner2{
+  height:0;
+  width:0;
+  border-left : 10px solid transparent;
+  border-bottom : 10px solid #2cb2ff;
+  position:absolute;
+  bottom:-10px;
+  left:-10px;
+}
+
+.corner3{
+  width:1px;
+  height:14px;
+  background-color: #35526d;
+  position:absolute;
+  right:-5px;
+  bottom:-12px;
+  transform:rotate(135deg)
+}
+
+.option{
+  display:flex;
+  justify-content: space-around;
+  margin-top:3px;
+}
+
+.option > p{
+  margin: 0;
+}
+
+.option > p:nth-child(1){
+  height:17px;
+  align-self: center;
+}
+
+.option > p:nth-child(1),
+.option > p:nth-child(2),
+.option > p:nth-child(3){
+  color:black;
+  font-weight: bold;
+}
+
+.option > p:nth-child(4), 
+.option > p:nth-child(5),
+.option > p:nth-child(6),
+.option > p:nth-child(7){
+  margin:0;
+  background-color:#0000003b;
+  color:#cdffc8;
+  padding:0 4px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+#mr{
+  color:#0000003b;
+}
+
+#mc{
+  color:#0000003b;
+}
+
+#result{
+  font-size:47px;
+  font-weight: bold;
+  margin:0;
+  margin-right:4px;
+  height:52px;
+  text-align: end;
+  color:black;
+  overflow:hidden;
+}
+
+#memorie{
+  margin:0;
+  font-weight: bold;
+  color:#3f3f3f;
+  font-size:20px;
+  margin-left:10px;
+}
+
+.calcBottom{
+  width:100%;
+}
+
+.buttonTop{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+  height:60px;
+}
+
+.left, .right{
+  display: flex;
+  align-items: center;
+}
+
+.right{
+  background-color: #2cb2ff;
+  border-radius: 6px;
+  height:40px;
+  align-self: center;
+}
+
+.left > button, .right > button{
+  width:50px;
+  height:25px;
+  border-radius: 6px;
+  background-color: #1e36ac;
+  text-align: center;
+  box-shadow: black 1px 1px 1px 1px;
+  color:white;
+  font-family: 'Bangers', cursive;
+  font-family: 'Dongle', sans-serif;
+}
+
+.left > button:nth-child(2), .right > button{
+  margin:0 10px;
+}
+
+.left > button > span, .right > button > span{
+  font-size:28px;
+  padding:0;
+  position:relative;
+  bottom:8px;
+  left:2px;
+}
+
+.buttonBottom{
+  width:320px;
+  margin:auto;
+}
+
+.line{
+  display:flex;
+  justify-content: space-around;
+  margin-bottom:15px;
+}
+
+.line > button,
+.line2 > button{
+  width:50px;
+  height:43px;
+  background-color: #1e36ac;
+  text-align: center;
+  box-shadow: black 1px 1px 1px 1px;
+  color:white;
+  font-family: 'Bangers', cursive;
+  font-family: 'Dongle', sans-serif;
+  border-radius: 6px;
+  font-size:28px;
+}
+
+.flex{
+  display:flex;
+}
+
+.buttonLeft{
+  width:240px;
+}
+
+.line2{
+  display:flex;
+  justify-content: space-around;
+  margin-bottom:15px;
+  width:240px;
+}
+
+.buttonRight{
+  width:50px;
+  margin-left:15px;
+}
+
+.buttonRight > button{
+  width:50px;
+  height:100px;
+  background-color: #1e36ac;
+  text-align: center;
+  box-shadow: black 1px 1px 1px 1px;
+  color:white;
+  font-family: 'Bangers', cursive;
+  font-family: 'Dongle', sans-serif;
+  font-size:70px;
+}
+
+.left > button:active,
+.right > button:active,
+.line > button:active,
+.line2 > button:active,
+.buttonRight > button:active{
+  box-shadow: none;
+}
+
+
+
